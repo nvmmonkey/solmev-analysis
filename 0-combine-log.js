@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { pipeline } = require('stream/promises');
 
+
 async function combineLogFiles() {
     try {
         // Read all files in current directory

@@ -51,7 +51,7 @@ async function getAllTransactions(accountAddress) {
 
                 // Track transaction timestamps
                 if (!lastTxTime) {
-                    lastTxTime = new Date(signatures[0].blockTime * 3000);
+                    lastTxTime = new Date(signatures[0].blockTime * 2000);
                 }
                 firstTxTime = new Date(signatures[signatures.length - 1].blockTime * 1000);
 
